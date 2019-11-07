@@ -1,0 +1,1 @@
+int checkIsbn(char* c);
