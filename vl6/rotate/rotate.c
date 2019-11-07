@@ -1,0 +1,4 @@
+void rotateLeft(char* text)
+{
+
+}
