@@ -1,4 +1,2 @@
 #/bin/bash
-gcc app.c -o app
-./app
-rm app
+/home/du/Desktop/Operating-Systems/resources/_run.sh
