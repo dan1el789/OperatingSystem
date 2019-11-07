@@ -3,5 +3,7 @@
 
 int main (void)
 {
-	return 0;
+	char isbn[] = {"0134685997"};
+	printf("%s %i\n", isbn, checkIsbn(isbn));
+	return checkIsbn(isbn);
 }
