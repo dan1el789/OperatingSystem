@@ -1,3 +1,4 @@
+#include "fib.h"
 int fib(const unsigned int number)
 {
 	if(0 == number)
