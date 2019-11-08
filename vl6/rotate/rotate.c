@@ -1,3 +1,4 @@
+#include "rotate.h"
 void rotateLeft(char* text)
 {
 	char first = text[0];
