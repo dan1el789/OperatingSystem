@@ -1,3 +1,4 @@
+#include "isbn.h"
 int checkIsbn(char* c)
 {
 	if(getLength(c) != 10)
