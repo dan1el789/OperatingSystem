@@ -1,3 +1,4 @@
+#include "static.h"
 int overflow(int n)
 {
 	static int sum = 0;
