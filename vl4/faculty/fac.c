@@ -1,3 +1,4 @@
+#include "fac.h"
 int fac_r(int n)
 {
 	if(n < 1)
