@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "caesar.h"
-#include <string.h>
+
 int main (void)
 {
 	printf("decode: ");

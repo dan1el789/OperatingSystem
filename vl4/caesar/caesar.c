@@ -1,3 +1,4 @@
+#include "caesar.h"
 char replaceWithChar(char, int);
 void decode_caesar3(char text[])
 {
