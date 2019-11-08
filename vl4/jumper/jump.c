@@ -1,3 +1,4 @@
+#include "jump.h"
 int jump(int data[], int size)
 {
 	//int size = 5; //sizeof(data) / sizeof(int *) ;
