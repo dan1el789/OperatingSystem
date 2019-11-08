@@ -1,4 +1,5 @@
 #include<stdlib.h>
+#include"prefix.h"
 char *repeat(char* text)
 {
 	char* newText = malloc(newLength(text)+1);

@@ -1,4 +1,2 @@
-echo $1
-git add . 
-git commit -m $1
-git push
+#/bin/bash 
+/home/du/Desktop/Operating-Systems/resources/_commit.sh "$1"
