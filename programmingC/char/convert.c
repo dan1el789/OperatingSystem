@@ -1,3 +1,4 @@
+#include "convert.h"
 void convert(char input[])
 {
 	for(int i = 0; input[i] != '\0'; i++)
