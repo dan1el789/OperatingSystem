@@ -21,5 +21,5 @@ cat wordlist | grep "^Ger" > $(date +%A).txt
               times  cause an immediate exit, so some pending commands may not
               be run at all.  This variant of -exec always returns true.
 
-
+**You can execute an command and if the returnvalue is 0 find returns a 0 **
 
