@@ -32,3 +32,11 @@ cat wordlist | grep "^Ger" > $(date +%A).txt
            system load avg over the last 1, 5 and 15 minutes
 
 **take shows the load of the system** the percentilevalues of CPU and MEM are calculated over the last one, five or fifteen minutes
+
+# Get your IP, which interface represents ethernet cable connection and which represents wifi connection?
+ifconfig
+
+eth -> ethernet cable 
+wlan -> wifi connection
+
+
