@@ -39,4 +39,8 @@ ifconfig
 eth -> ethernet cable 
 wlan -> wifi connection
 
+#Determine the clock rate of your cpu in /proc
+cat /proc/cpuinfo | grep MHz
 
+#Determine the version of your Linux kernel
+cat /proc/sys/kernel
