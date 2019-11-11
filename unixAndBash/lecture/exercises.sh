@@ -14,3 +14,5 @@ df --block-size=1024 --total
 #determine the number of users currently logged in
 who -u
 
+#Append some text to hello.txt
+echo "test" >> hello.txt

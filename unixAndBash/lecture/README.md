@@ -35,3 +35,11 @@ touch FILENAME - creates a file
 
 cat FILNEMAE - print content of FILENAME
 
+
+more - print the content of a file as pages
+
+cut - works on columns of file 
+
+sort - sort a file
+
+grep - search in a file
