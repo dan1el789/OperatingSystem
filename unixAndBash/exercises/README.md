@@ -23,3 +23,12 @@ cat wordlist | grep "^Ger" > $(date +%A).txt
 
 **You can execute an command and if the returnvalue is 0 find returns a 0**
 
+# Take a look on **man top** what is the meaning of load average. 
+2a. UPTIME and LOAD Averages
+       This portion consists of a single line containing:
+           program or window name, depending on display mode
+           current time and length of time since last boot
+           total number of users
+           system load avg over the last 1, 5 and 15 minutes
+
+**take shows the load of the system** the percentilevalues of CPU and MEM are calculated over the last one, five or fifteen minutes
