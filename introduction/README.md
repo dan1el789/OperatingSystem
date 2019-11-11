@@ -8,7 +8,7 @@ page 10 - Typical  operating systems were FMS (the Fortran Monitor System)  and 
 page 8 -  All programming was done in absolute machine language, or even worse yet, by wiring up electrical cir-cuits  by  connecting  thousands  of  cables  to  plugboards  to  control  the  machine's  basic  functions.
 
 # Explain what a resource in context of an operating system is/represents and provide an example
-
+page 6 - When  a computer  (or network)  has multiple users,  the  need  for  managing  and  protecting  the  memory,  I/O  devices,  and  other resources  is even  greater,  since  the  users  might  otherwise  interfere  with  one  another.   In  addition,  users  often  need  to  share  not  only  hardware,  but  information  (files,  databases,  etc.)  as  well.   In short, this  view  of  the  operating  system  holds  that  its  primary  task  is  to  keep  track  of  which  programs  are  using  which  resource,  to  grant  resource  requests,  to  account  for usage,  and to  mediate  conflicting  requests  from different  programs and  users.  
 # What  is  Multiplexing?  Explain  the  difference  between  Time  and  Space  Multiplexing. Find examples outside of computer science. 
 
 # What is the main task of current operating systems?
