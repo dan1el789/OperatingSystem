@@ -1,10 +1,10 @@
 # determine the number of ls commands executed up to now
 history | grep ls | wc -l
 
-#Find all words starting with *Ger* in the english dictionary. Save the result in a text file with day of week. 
+# Find all words starting with *Ger* in the english dictionary. Save the result in a text file with day of week. 
 cat wordlist | grep "^Ger" > $(date +%A).txt
 
-#Take a look on **man find** what is the purpose of the option -exec and how to use. 
+# Take a look on **man find** what is the purpose of the option -exec and how to use. 
 -exec command {} +
               This  variant  of the -exec action runs the specified command on
               the selected files, but the command line is built  by  appending
@@ -21,5 +21,5 @@ cat wordlist | grep "^Ger" > $(date +%A).txt
               times  cause an immediate exit, so some pending commands may not
               be run at all.  This variant of -exec always returns true.
 
-**You can execute an command and if the returnvalue is 0 find returns a 0 **
+**You can execute an command and if the returnvalue is 0 find returns a 0**
 
