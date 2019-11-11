@@ -29,3 +29,6 @@ Although  third-generation  operating  systems  were  well  suited  for  big  sc
 The CPU usage is better with Multi-Programming, according to page 11 *While  one job  was  waiting  for  I/O  to  complete,  another job  could  be  using  the  CPU.  Special hardware kept one program from interfering  with  another.*
 
 # Explain Time-Sharing and are we currently using Time-Sharing with our operating systems such as Windows and Linux?
+ In  a  timesharing  system,  if 20 users  are  logged  in  and  17  of them  are  thinking  or talking  or  drinking  coffee,  the  CPU  can  be  allocated  in  turn  to  the  three jobs  that  want  service.  Since  people  debugging programs  usually  issue  short  commands  (e.g.,  compile  a five-page pro-ceduref)  rather  than  long  ones  (e.g.,  sort  a million-record  file),  the  computer  can  provide fast,  interactive  service to a number of users and perhaps also work on big batch jobs  in  the  background  when  the  CPU  is  otherwise  idle. 
+
+ 
