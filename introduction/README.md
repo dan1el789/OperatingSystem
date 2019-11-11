@@ -5,4 +5,16 @@ page 7 - The  first  true  digital  computer  was  designed  by  the  English  m
 page 10 - Typical  operating systems were FMS (the Fortran Monitor System)  and IBSYS,  IBM's operating  system for the 7094. 
 
 # Why was there no need for an operating system in the first computergeneratioin
-page 8 -  All programming was done in absolute machine language, or even worse yet, by wiring up electrical cir-cuits  by  connecting  thousands  of  cables  to  plugboards  to  control  the  machine's  basic  functions. 
+page 8 -  All programming was done in absolute machine language, or even worse yet, by wiring up electrical cir-cuits  by  connecting  thousands  of  cables  to  plugboards  to  control  the  machine's  basic  functions.
+
+# Explain what a resource in context of an operating system is/represents and provide an example
+
+# What  is  Multiplexing?  Explain  the  difference  between  Time  and  Space  Multiplexing. Find examples outside of computer science. 
+
+# What is the main task of current operating systems?
+
+# Explain the term Multi-Programming and find the term we are using today instead.
+
+# Is CPU usage better with Multi-Programming? What does CPU usage represent?
+
+# Explain Time-Sharing and are we currently using Time-Sharing with our operating systems such as Windows and Linux?
