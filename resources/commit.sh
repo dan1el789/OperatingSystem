@@ -1,2 +1,2 @@
 #/bin/bash 
-/home/du/Desktop/Operating-Systems/resources/_commit.sh "$1"
+/home/du/Desktop/Operating-Systems/resources/_commit.sh "$*"

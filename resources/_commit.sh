@@ -1,4 +1,4 @@
-echo "$1"
+echo "$*"
 git add . 
-git commit -m "$1"
+git commit -m "$*"
 git push
