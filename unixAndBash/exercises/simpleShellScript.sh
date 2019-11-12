@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 #Write a Bashscript to work with /etc/passwd 
 #Copy this file into current dir
