@@ -2,7 +2,7 @@
 history | grep ls | wc -l
 
 # Find all words starting with *Ger* in the english dictionary. Save the result in a text file with day of week. 
-cat wordlist | grep "^Ger" > $(date +%A).txt
+cat /usr/share/dict/american-english | grep "^Ger" > $(date +%A).txt
 
 # Take a look on **man find** what is the purpose of the option -exec and how to use. 
 -exec command {} +
