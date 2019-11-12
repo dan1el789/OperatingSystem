@@ -1,6 +1,8 @@
 # determine the number of ls commands executed up to now
 history | grep ls | wc -l
 
+**something about grep** http://openbook.rheinwerk-verlag.de/shell_programmierung/shell_013_001.htm#RxxKap01300104004F9C1F039187
+
 # Find all words starting with *Ger* in the english dictionary. Save the result in a text file with day of week. 
 cat /usr/share/dict/american-english | grep "^Ger" > $(date +%A).txt
 
