@@ -19,3 +19,31 @@ Fraction* multiplyFractions(Fraction *first, Fraction *second)
 	Fraction *pointer = &product;
 	return pointer;
 }
+
+int absolut(int number)
+{
+	if(number < 0)
+		number = number * -1;
+	return number;
+}
+
+int getGreatestCommonDivisor(int a, int b)
+{
+	a = absolut(a);
+	b = absolut(b);
+	int rest = 0;
+	while(b != 0)
+	{
+		rest = a % b;
+		a = b;
+		b = rest;
+	}
+	return a;
+}
+
+void reduceFraction(Fraction *fraction)
+{
+	int divider = getGreatestCommonDivisor(fraction->numerator, fraction->denominator);
+	fraction->numerator = fraction->numerator / divider;
+	fraction->denominator = fraction->denominator / divider;
+}
