@@ -11,9 +11,15 @@ int main(void)
 	readFraction(&second);
 	printFraction(&second);
 
+	printf("\nsum: \n");
 	Fraction *sum;
         sum = addFractions(&first, &second);
 	printFraction(sum);
+
+	printf("\nproduct: \n");
+	Fraction *product;
+	product = multiplyFractions(&first, &second);
+	printFraction(product);
 
 	return 0;
 }
