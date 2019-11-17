@@ -19,3 +19,10 @@ void readFraction(Fraction *fraction)
 	readNumerator(fraction); 
 	readDenominator(fraction);
 }
+
+void printFraction(Fraction *fraction)
+{
+	printf(" %i\n", fraction->numerator);
+	printf("-----\n");
+	printf(" %i\n", fraction->denominator);
+}
