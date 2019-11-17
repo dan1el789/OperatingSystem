@@ -33,7 +33,7 @@ pwd - working directory name
 
 touch FILENAME - creates a file
 
-cat FILNEMAE - print content of FILENAME
+cat FILENAME - print content of FILENAME
 
 
 more - print the content of a file as pages
