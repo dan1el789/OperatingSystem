@@ -3,7 +3,7 @@ typedef struct fract {
 	int denominator;
 } Fraction;
 
-int getGreatestCommonDivisor(Fraction *first, Fraction *second);
+int reduceFraction(Fraction *first, Fraction *second);
 void readFraction(Fraction *fraction);
 void printFraction(Fraction *fraction);
 Fraction* addFractions(Fraction *first, Fraction *second);
