@@ -8,6 +8,7 @@ Fraction* addFractions(Fraction *first, Fraction *second)
 		+ second->denominator * first->numerator;
 	result.denominator = first->denominator * second->denominator;
 	Fraction *pointer = &result;
+	reduceFraction(pointer);
 	return pointer;
 }
 
@@ -17,6 +18,7 @@ Fraction* multiplyFractions(Fraction *first, Fraction *second)
 	product.numerator = (first->numerator) * (second->numerator);
 	product.denominator = (first->denominator) * (second->denominator);
 	Fraction *pointer = &product;
+	reduceFraction(pointer);
 	return pointer;
 }
 

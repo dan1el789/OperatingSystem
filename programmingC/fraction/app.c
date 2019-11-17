@@ -14,13 +14,11 @@ int main(void)
 	printf("\nsum: \n");
 	Fraction *sum;
         sum = addFractions(&first, &second);
-	reduceFraction(sum);
 	printFraction(sum);
 
 	printf("\nproduct: \n");
 	Fraction *product;
 	product = multiplyFractions(&first, &second);
-	reduceFraction(product);
 	printFraction(product);
 
 	return 0;
