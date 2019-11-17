@@ -1,5 +1,4 @@
 #include "fraction.h"
-#include <stdio.h>
 
 Fraction* addFractions(Fraction *first, Fraction *second)
 {
@@ -48,4 +47,17 @@ void reduceFraction(Fraction *fraction)
 	int divider = getGreatestCommonDivisor(fraction->numerator, fraction->denominator);
 	fraction->numerator = fraction->numerator / divider;
 	fraction->denominator = fraction->denominator / divider;
+}
+
+int compareFractions(Fraction *first, Fraction *second)
+{
+	Fraction minusOne;
+	minusOne.numerator = -1;
+	minusOne.denominator = 1;
+	Fraction *minusFirst = multiplyFractions(first, &minusOne);
+	Fraction *sum = addFractions(minusFirst, second);
+	if(sum->numerator == 0)
+		return 0;
+	return 1;
+
 }

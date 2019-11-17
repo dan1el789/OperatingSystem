@@ -21,5 +21,9 @@ int main(void)
 	product = multiplyFractions(&first, &second);
 	printFraction(product);
 
+	printf("\nequal: \n");
+	printf("first and second %i \n", compareFractions(&first, &second));
+
+
 	return 0;
 }
