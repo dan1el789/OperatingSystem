@@ -33,8 +33,6 @@ char *clone(char *c)
 
 int testPattern(char *source, void (*fun)(char *)){
 	char*  cp = clone(source);
-	printString(cp);
-	printString(source);
 	fun(source);
 	
 	return 0;

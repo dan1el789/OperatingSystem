@@ -1,16 +1,12 @@
 #include <stdio.h>
 #include "do.h"
 
-void rubbish(char *c){
-	puts("I'm a function pointer");
-	printf("Thats my param: %s\n", c);
-}
-
 int main(void)
 {
 	void (*fnc)(char*);
-	fnc = rubbish;
+	fnc = printString;
 	char* ptr = {"hello"}; 
+	char* pattern = {"hel*o"};
 	printString(ptr);
 	printStringLength(ptr);
 	testPattern(ptr, fnc);
