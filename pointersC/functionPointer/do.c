@@ -8,9 +8,18 @@ void printString(char *c)
 	printf("\n");
 }
 
-void printStringLength(char *c)
+int getStringLength(char *c)
 {
 	int i;
 	for(i=0; *c != '\0'; i++, *c++);
-	printf("%i\n", i);
+	return i;
+}
+
+void printStringLength(char *c)
+{
+	printf("%i\n", getStringLength(c));
+}
+
+int testPattern(char *source, void (*fun)(char *)){
+	
 }
