@@ -3,8 +3,9 @@
 
 void printString(char *c)
 {
-	while(*c != '\0')
-		printf("%c", *c++);
+	char* ptr = &*c;
+	while(*ptr != '\0')
+		printf("%c", *ptr++);
 	printf("\n");
 }
 
@@ -20,6 +21,21 @@ void printStringLength(char *c)
 	printf("%i\n", getStringLength(c));
 }
 
+char *clone(char *c)
+{
+	char copy[getStringLength(c)+1]; 
+	for(int i = 0; i < (getStringLength(c)+1) ; i++)
+		copy[i] = c[i];
+	char *ptr = copy;
+	return  ptr;
+
+}
+
 int testPattern(char *source, void (*fun)(char *)){
+	char*  cp = clone(source);
+	printString(cp);
+	printString(source);
+	fun(source);
 	
+	return 0;
 }
