@@ -2,4 +2,4 @@
 
 void printString(char *c);
 void printStringLength(char *c);
-int testPattern(char *sourche, void (*fun)(char *));
+int testPattern(char *source, void (*fun)(char *));
