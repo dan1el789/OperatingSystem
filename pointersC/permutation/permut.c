@@ -1,16 +1,17 @@
 #include "permut.h"
+#include <stdio.h>
 
 int getLength(char *ptr)
 {
 	int ctr=0;
 	for(;ptr[ctr] != '\0'; ctr++);
-	return 0;
+	return ctr;
 }
 
 int getMinIndex(char *ptr, int startAt)
 {
 	int minIndex = startAt;
-	for(int ctr = startAt ; ptr[ctr] < getLength(ptr) ; ctr++)
+	for(int ctr = startAt ; ctr < getLength(ptr) ; ctr++)
 	{
 		if(ptr[minIndex] > ptr[ctr])
 			minIndex = ctr;
@@ -29,10 +30,13 @@ void sort(char *ptr)
 	}
 }
 
+#include <stdio.h>
 int isPermutation(char *a, char *b)
 {
 	sort(a);
 	sort(b);
+	//printf("%s\n", a);
+	//printf("%s\n", b);
 
 	for(int i = 0; i < getLength(a) + 1 ; i++)
 	{
