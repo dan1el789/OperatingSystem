@@ -30,17 +30,25 @@ void sort(char *ptr)
 	}
 }
 
-#include <stdio.h>
+void mstrcpy(char *dest, char *ptr)
+{
+	for(int i = 0; i < (getLength(ptr)+1); i++)
+		dest[i] = ptr[i];
+}
+
+
 int isPermutation(char *a, char *b)
 {
-	sort(a);
-	sort(b);
-	//printf("%s\n", a);
-	//printf("%s\n", b);
+	char wa[getLength(a)+1];
+       	mstrcpy(wa, a);
+	char wb[getLength(b)+1];
+	mstrcpy(wb, b);
+	sort(wa);
+	sort(wb);
 
-	for(int i = 0; i < getLength(a) + 1 ; i++)
+	for(int i = 0; i < getLength(wa) + 1 ; i++)
 	{
-		if(a[i] != b[i])
+		if(wa[i] != wb[i])
 			return 1;
 	}
 	return 0;
