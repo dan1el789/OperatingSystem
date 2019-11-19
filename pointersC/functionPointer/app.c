@@ -9,6 +9,6 @@ int main(void)
 	char* pattern = {"hel*o"};
 	printString(ptr);
 	printStringLength(ptr);
-	testPattern(ptr, fnc);
+	testPattern(pattern, fnc);
 	return 0;
 }

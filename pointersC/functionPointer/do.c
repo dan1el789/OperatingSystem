@@ -31,8 +31,8 @@ char *clone(char *c)
 
 }
 
-int testPattern(char *source, void (*fun)(char *)){
-	char*  cp = clone(source);
+int testPattern(char *source, void (*fun)(char *))
+{
 	fun(source);
 	
 	return 0;
