@@ -28,6 +28,9 @@ MOVREGISTER1,28
 which  moves  the  number  28  to  REGISTER1  must  not  be  relocated.  The  loader  needs some way to tell what is an address and what is a constant. *page 177* ***important diagram on this page!***
 
 # **Which component is responsible to convert between logical and physical memory addresses?**
+Using base  and  limit registers is an easy  way  to give each  process  its  own pri-vate  address space because  every memory  address  generated  automatically  has the base  register  contents  added  to  it  before  being  sent  to  memory.   In  many  implementations,  the  base  and  limit  registers  are  protected  in  such  a  way  that  only  the  operating  system  can  modify  them.  This  was  the  case  on  the  CDC  6600,  but  not  on  the  Intel  8088,  which  did  not  even  have  the  limit  register.   It  did,  however,  have  multiple  base  registers,  allowing  program  text  and  data,  for  example,  to  be  independently  relocated,  but  offered  no  protection  from  out-of-range  memory  references. 
+
+A disadvantage  of relocation  using  base  and  limit registers  is  the  need  to  per-form  an  addition  and  a  comparison  on  every  memory  reference.  Comparisons  can  be  done  fast,  but  additions  are  slow  due  to  carry  propagation  time  unless  special  addition circuits  are  used. *page 179*
 
 # **Explain the idea behind the Basis and Limit register.**
 
