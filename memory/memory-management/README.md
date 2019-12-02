@@ -12,7 +12,7 @@ What is the second choice?  Over the years, people discovered  the concept of a 
 
 **What are the problems when using systems without memory abstraction?**
 
-Under these  conditions,  it  was  not possible  to  have  two  running  programs  in  memory at  the  same time.  If the first  program  wrote  a  new  value  to,  say,  location  2000,  this  would  erase  whatever  value  the  second  program  was  storing  there.  NoUiing  would  work and  both programs would crash  almost immediately
+Under these  conditions,  it  was  not possible  to  have  two  running  programs  in  memory at  the  same time.  If the first  program  wrote  a  new  value  to,  say,  location  2000,  this  would  erase  whatever  value  the  second  program  was  storing  there.  NoUiing  would  work and  both programs would crash  almost immediately *page 174*
 
 **Explain static relocation and why it is not a general solution for executing multipleprograms on systems without memory abstraction?**
 
