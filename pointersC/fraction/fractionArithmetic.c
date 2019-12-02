@@ -1,24 +1,18 @@
 #include "fraction.h"
 
-Fraction* addFractions(Fraction *first, Fraction *second)
+void addFractions(Fraction *result, Fraction *first, Fraction *second)
 {
-	Fraction result;
-	result.numerator = first->denominator * second->numerator 
+	result->numerator = first->denominator * second->numerator 
 		+ second->denominator * first->numerator;
-	result.denominator = first->denominator * second->denominator;
-	Fraction *pointer = &result;
-	reduceFraction(pointer);
-	return pointer;
+	result->denominator = first->denominator * second->denominator;
+	reduceFraction(result);
 }
 
-Fraction* multiplyFractions(Fraction *first, Fraction *second)
+void multiplyFractions(Fraction *result, Fraction *first, Fraction *second)
 {
-	Fraction product;
-	product.numerator = (first->numerator) * (second->numerator);
-	product.denominator = (first->denominator) * (second->denominator);
-	Fraction *pointer = &product;
-	reduceFraction(pointer);
-	return pointer;
+	result->numerator = (first->numerator) * (second->numerator);
+	result->denominator = (first->denominator) * (second->denominator);
+	reduceFraction(result);
 }
 
 int absolut(int number)
@@ -54,9 +48,11 @@ int compareFractions(Fraction *first, Fraction *second)
 	Fraction minusOne;
 	minusOne.numerator = -1;
 	minusOne.denominator = 1;
-	Fraction *minusFirst = multiplyFractions(first, &minusOne);
-	Fraction *sum = addFractions(minusFirst, second);
-	if(sum->numerator == 0)
+	Fraction minusFirst;
+       	multiplyFractions(&minusFirst, first, &minusOne);
+	Fraction sum;
+        addFractions(&sum, &minusFirst, second);
+	if(sum.numerator == 0)
 		return 0;
 	return 1;
 
