@@ -34,4 +34,14 @@ A disadvantage  of relocation  using  base  and  limit registers  is  the  need 
 
 # **Explain the idea behind the Basis and Limit register.**
 
-178-179
+This  simple  solution  uses  a  particularly  simple  version  of  dynamic  relocation.   What  it  does  is  map  each  process'  address  space  onto  a  different  part  of  physical  memory  in a simple  way.  The classical  solution,  which  was  used  on  ma-chines  ranging  from  the  CDC  6600  (the world's  first  supercomputer)  to  the  Intel  8088  (the  heart of the  original  IBM  PC),  is  to  equip  each  CPU  with  two  special  hardware  registers,  usually  called  the  base  and  limit  registers.  When  base  and  SEC.   3.2   A  MEMORY  ABSTRACTION:  ADDRESS  SPACES  179 limit  registers  are  used,  programs  are  loaded  into  consecutive  memory  locations  wherever there  is  room  and  without relocation  during loading,  as shown  in Fig.  3-2(c).   When  a process  is  run,  the base register  is loaded  with  the physical  address  where  its  program  begins  in  memory  and  the  limit  register  is  loaded  with  the  length  of  the  program.   In  Fig.  3-2(c),  the  base  and  limit  values  that  would  be  loaded  into  these  hardware  registers  when  the  first  program  is  run  are  0  and  16,384,  respectively.  The  values  used  when  the  second program  is  run  are  16,384  and  32,768,  respectively.   If  a  third  16-KB  program  were  loaded  directly  above  the second one  and run,  the base  and  limit registers  would  be 32,768  and  16,384.
+
+Every  time  a process  references  memory,  either  to  fetch  an  instruction  or read or write  a  data  word,  the  CPU  hardware  automatically  adds  the  base  value  to  the  address  generated  by  the  process  before  sending  the  address  out  on  the  memory  bus.  Simultaneously,  it checks  if the  address  offered  is  equal  to  or greater  than  the  value  in  the  limit  register,  in  which  case  a  fault  is  generated  and  the  access  is  aborted.  Thus  in  the  case  of the  first  instruction  of the second  program  in  Fig. 3-2(c), the process executes  a 
+
+**JMP28 instruction**,
+
+  but the hardware treats  it as though it were JMP  16412  so  it  lands  on  the  
+
+**CMP**
+
+instruction  as expected.  The  settings  of the base.and limit registers  during  the  execution  of the  second  program  of Fig.  3-2(c)  are  shown  in  Fig. 3-3. *178-179*
