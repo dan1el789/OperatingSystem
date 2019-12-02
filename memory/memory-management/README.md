@@ -44,4 +44,4 @@ instruction, but the hardware treats  it as though it were JMP  16412  so  it  l
 
 **CMP**
 
-instruction  as expected.  The  settings  of the base.and limit registers  during  the  execution  of the  second  program  of Fig.  3-2(c)  are  shown  in  Fig. 3-3. *178-179*
+instruction  as expected.  The  settings  of the base.and limit registers  during  the  execution  of the  second  program  of Fig.  3-2(c)  are  shown  in  Fig. 3-3. *178-179* ***important read Pages!***
