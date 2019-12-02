@@ -30,3 +30,5 @@ which  moves  the  number  28  to  REGISTER1  must  not  be  relocated.  The  lo
 # **Which component is responsible to convert between logical and physical memory addresses?**
 
 # **Explain the idea behind the Basis and Limit register.**
+
+178-179
