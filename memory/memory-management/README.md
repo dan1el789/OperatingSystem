@@ -23,7 +23,7 @@ The core problem here is that the two programs both reference absolute physical 
 
 MOVREGISTER1,28
 
-which  moves  the  number  28  to  REGISTERl  must  not  be  relocated.  The  loader  needs some way to tell what is an address and what is a constant. 
+which  moves  the  number  28  to  REGISTER1  must  not  be  relocated.  The  loader  needs some way to tell what is an address and what is a constant. 
 
 **Which component is responsible to convert between logical and physical memory addresses?**
 
