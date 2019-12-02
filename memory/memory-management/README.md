@@ -38,9 +38,9 @@ This  simple  solution  uses  a  particularly  simple  version  of  dynamic  rel
 
 Every  time  a process  references  memory,  either  to  fetch  an  instruction  or read or write  a  data  word,  the  CPU  hardware  automatically  adds  the  base  value  to  the  address  generated  by  the  process  before  sending  the  address  out  on  the  memory  bus.  Simultaneously,  it checks  if the  address  offered  is  equal  to  or greater  than  the  value  in  the  limit  register,  in  which  case  a  fault  is  generated  and  the  access  is  aborted.  Thus  in  the  case  of the  first  instruction  of the second  program  in  Fig. 3-2(c), the process executes  a 
 
-**JMP28 instruction**,
+**JMP28** 
 
-  but the hardware treats  it as though it were JMP  16412  so  it  lands  on  the  
+instruction, but the hardware treats  it as though it were JMP  16412  so  it  lands  on  the  
 
 **CMP**
 
