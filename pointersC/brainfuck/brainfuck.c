@@ -21,6 +21,8 @@ void interpretBrainfuck(char* input)
 			ptr++;
 		if(*input == '.')
 			printf("%c", *ptr);
+		if(*input == ',')
+			scanf("%c", ptr);
 		if(*input == '[' && *ptr != 0)
 		{
 			store = input;
