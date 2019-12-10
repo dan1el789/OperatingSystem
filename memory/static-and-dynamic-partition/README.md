@@ -8,6 +8,7 @@ With  a  bitmap,  memory  is  divided  into  allocation  units  as  small  as  a
 A  bitmap  provides  a  simple  way  to  keep  track  of  memory  words  in  a  fixed  amount  of  memory  because  the  size  of  the  bitmap  depends  only  on  the  size  of  memory  and  the size  of the  allocation  unit.  The  main  problem  is  that  when  it  has  been  decided  to  bring  a  k  unit  process  into  memory,  the  memory  manager  must  search  the bitmap to  find a run of k consecutive 0 bits in  the map.  Searching  a  bitmap  for a  run  of a  given  length  is  a slow  operation  (because the  run  may  straddle  word boundaries in the map);  this is an argument  against bitmaps.
 
 ## What is the size of the bitmap in static partitions with 1 GB main memory and partitionsize of 1 KB?
+1 GiB / 1024 KB = 1024² = 2²⁰ => size of Bitmap:  1 MiBit
 
 ## What are dynamic partitions?
 
