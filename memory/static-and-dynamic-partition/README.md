@@ -20,7 +20,7 @@ Another way of keeping track of memory is to maintain a linked list of allocated
 
 ## Why is the usage of double linked lists better than single linked lists?
 
-## What happens when we delete an element in a dynamic partition? What happens to thememory and why is it reasonable to do?
+## What happens when we delete an element in a dynamic partition? What happens to the memory and why is it reasonable to do?
 
 ## Explain the difference between internal and external fragmentation?
 
