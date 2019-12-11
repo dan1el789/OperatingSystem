@@ -29,6 +29,8 @@ quick fit
 
 
 ## Why is the usage of double linked lists better than single linked lists?
+Since the process table slot for the terminating process will normally point to the list entry for the process itself, it may be more convenient to have the list as a double-linked list, rather than the single-linked list of Fig. 3-6(c). This structure makes it easier to find the previous entry and to see if a merge is possible. *page 184*
+
 
 ## What happens when we delete an element in a dynamic partition? What happens to the memory and why is it reasonable to do?
 
