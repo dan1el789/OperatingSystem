@@ -17,6 +17,16 @@ Another way of keeping track of memory is to maintain a linked list of allocated
 
 
 ## How do we manage free memory in dynamic partitions?
+first fit
+
+best fit
+
+worst fit
+
+quick fit
+
+**page 184 and 185 important to read!**
+
 
 ## Why is the usage of double linked lists better than single linked lists?
 
