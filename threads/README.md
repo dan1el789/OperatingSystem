@@ -18,3 +18,4 @@ If your data is not decomposited you can't work in parallel. Because if you modi
 
 
 ## How to start a thread?
+[have a look at this piece of code](https://github.com/ich-bin-du/OperatingSystem/blob/master/threads/Sample.java)
