@@ -3,6 +3,7 @@
 
 ## Explain in general the functioning of the Buddy Algorithm when requesting S bytes.
 Calculate depth = roundup( log2(N / S) )
+
 You have a storage of N bytes if you request S bytes you look into the calculated depth for memory partitions. If there is no partition of this size created you look one step above for a free unused partition, if you find it, you divide into two blocks and one of them is used for your memory request. Else this step will be done one step above again. 
 
 ## How does the Buddy Algorithm detect that there is no memory for him to get?
