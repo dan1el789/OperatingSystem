@@ -15,7 +15,7 @@ If your data is not decomposited you can't work in parallel. Because if you modi
 * Short waiting time for extern resources
 
 ## What about measuring?
-
+You can measure time in different ways. The command time measures the complete execution time. Execution time measurement has to be donewithin the application. Measurement has to be repeated to calculate the average time of manymeasurements to eliminate side effects from starting the program or the garbagecollector.
 
 ## How to start a thread?
 [have a look at this piece of code](https://github.com/ich-bin-du/OperatingSystem/blob/master/threads/Sample.java)
