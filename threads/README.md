@@ -1,8 +1,10 @@
 # Threads
 
 ## What is the difference between processes and threads?
-Every process can have one or more threads and each thread belong to one process. 
+A process is a complete programm and a thread is a pipeline for CPU instructions. Every process can have one or more threads and one thread belongs to one process.
+ 
 ## Explain Data Decomposition.
+
 
 ## When does parallel programming pay off?
 
