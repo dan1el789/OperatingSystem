@@ -33,7 +33,7 @@ Since the process table slot for the terminating process will normally point to 
 
 
 ## What happens when we delete an element in a dynamic partition? What happens to the memory and why is it reasonable to do?
-When you delete something, there will be a hole in your memory. So your memory can get fragmented. If you delete something with the size of 2048 KiB and you want to insert something new into the memory with the size of 1792 KiB. There will still be a hole of 256 KiB which maybe never gets used, because its to small. So your memory gets fragmented. 
+When you delete something, there will be a hole in your memory. So your memory can get fragmented. If you delete something with the size of 2048 KiB and you want to insert something new into the memory with the size of 1792 KiB. There will still be a hole of 256 KiB which maybe never gets used, because its to small. So your memory gets fragmented. So you need a segmentation strategy to use space in memory in an effective way.  
 
 ## Explain the difference between internal and external fragmentation?
 
