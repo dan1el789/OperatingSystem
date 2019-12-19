@@ -1,4 +1,5 @@
 # Buddy Systems
+[Buddy system in script](https://elearning.fhws.de/pluginfile.php/1086958/mod_resource/content/1/07_Memory.pdf#Outline0.1.3.35)
 
 ## Explain in general the functioning of the Buddy Algorithm when requesting S bytes.
 
