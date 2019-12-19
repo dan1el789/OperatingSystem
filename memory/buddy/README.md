@@ -9,7 +9,9 @@ You have a storage of N bytes if you request S bytes you look into the calculate
 ## How does the Buddy Algorithm detect that there is no memory for him to get?
 You run to the binary tree to allocate bytes like in step one. If you find out everything on the correct depth is allocated, you will find out that there is no possiblity to allocate memory. 
 
-
 ## What kinds of fragmentation are there in a Buddy System and how is memory divided?
+memory is divided into blocks of N / 2^k 
+
+if you request 65 KiB and your next blocksize is 128 KiB than you have unused 63 KiB and this is inefficent. So you have a humongous internal fragmentations.
 
 ## You have heard in the lecture that free memory blocks of size 2^k are managed in a list.  Are there any other methods to manage the memory?
