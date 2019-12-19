@@ -40,9 +40,10 @@ have a look at the script 7 page 25.
 
 
 ## Name and shortly explain strategies to fill gaps in free memory in dynamic partitions.
-["have a look at this and read the pages in the book"](https://github.com/ich-bin-du/OperatingSystem/tree/master/memory/static-and-dynamic-partition#how-do-we-manage-free-memory-in-dynamic-partitions)
+[have a look at this and read the pages in the book](https://github.com/ich-bin-du/OperatingSystem/tree/master/memory/static-and-dynamic-partition#how-do-we-manage-free-memory-in-dynamic-partitions)
 
 ## Which strategy is the best one?
+It depends on your memory. And if it depends you have to ask an software engineer and a project manager. ;) 
 
 ## Compare Rotating First Fit and Last Fit using the second example from the slides.
 
