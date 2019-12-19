@@ -46,5 +46,7 @@ have a look at the script 7 page 25.
 It depends on your memory. And if it depends you have to ask an software engineer and a project manager. ;) 
 
 ## Compare Rotating First Fit and Last Fit using the second example from the slides.
+Last Fit fills the last gap. And rotating first fit starts at the last insertion of the memory and allocates the next gap which is large enough. 
 
-## Design and apply a new strategy called Worst Fit. Use it on the first and second examplefrom the slides.
+## Design and apply a new strategy called Worst Fit. Use it on the first and second example from the slides.
+You take the largest gap and allocate the requested memory in that gap. So you have maybe a useful gap left. 
