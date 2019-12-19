@@ -33,6 +33,7 @@ Since the process table slot for the terminating process will normally point to 
 
 
 ## What happens when we delete an element in a dynamic partition? What happens to the memory and why is it reasonable to do?
+There will be a hole in your memory, if we delete something. The memory gets fragmented and you sometimes have to reorder your memory what is slow but necessary. 
 
 ## Explain the difference between internal and external fragmentation?
 
