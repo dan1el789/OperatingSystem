@@ -9,7 +9,7 @@ A  bitmap  provides  a  simple  way  to  keep  track  of  memory  words  in  a  
 
 ## What is the size of the bitmap in static partitions with 1 GB main memory and partitionsize of 1 KB?
 1 GiB / 1024 KiB = 1024² = 2²⁰ => size of Bitmap:  1 MiBit
-just store in a row if a partition is allocated.
+just store in a row if a partition is allocated. *page 183* 
 
 ## What are dynamic partitions?
 Memory Management with Linked Lists 
