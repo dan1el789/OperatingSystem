@@ -17,7 +17,8 @@ It depends on the point of view. When I look from the view of a programmer on th
 
 ## 1.4 Explain Dining Philosophers Problem.
 ***read page 167-170 in MOS 4th Edition***
-In a nutshell, there are five philosophers and five forks, but each philosopher needs two forks to eat and if every philosopher takes the right fork, no one can eat and all five will starve. 
+
+In a nutshell: there are five philosophers and five forks, but each philosopher needs two forks to eat and if every philosopher takes the right fork, no one can eat and all five will starve. 
 
 ## 1.5 Why are there 5 Philosophers?
 
