@@ -15,7 +15,7 @@ In computer science, in the field of databases, write–write conflict, also kno
 *page 121 - MOS 4th Edition*
 
 ## How can you protect a critical section?
-Although this requirement avoids race conditions, it is not sufficient for havingparallel  processes  cooperate  correctly  and  efficiently  using  shared  data.  We   need four conditions to hold to have a good solution: 
+Although this requirement avoids race conditions, it is not sufficient for having parallel  processes  cooperate  correctly  and  efficiently  using  shared  data.  We   need four conditions to hold to have a good solution: 
 
 1.   No two processes may be simultaneously inside their critical regions.
 2.   No assumptions may be made about speeds or the number of CPUs.
