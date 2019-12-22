@@ -21,6 +21,7 @@ It depends on the point of view. When I look from the view of a programmer on th
 In a nutshell: there are five philosophers and five forks, but each philosopher needs two forks to eat and if every philosopher takes the right fork, no one can eat and all five will starve. 
 
 ## 1.5 Why are there 5 Philosophers?
+To have a good simulation to the problem. 
 
 ## 1.6 List four preconditions for deadlocks.
 Coffman et al. (1971) showed that four conditions must hold for there to be a (resource) deadlock:
