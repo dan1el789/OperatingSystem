@@ -56,6 +56,8 @@ TSL RX,LOCK
 
 (Test  and  Set  Lock)  that  works  as  follows.   It  reads  the  contents  of  the  memory word *lock* into register RX and then stores a nonzero value at the memory addresslock.  The  operations  of  reading  the  word  and  storing  into  it  are  guaranteed  to  be indivisible — no other processor can access the memory word until the instruction is finished. The CPU executing the TSL instruction locks the memory bus to prohibitother CPUs from accessing memory until it is done. It is important to note that locking the memory bus is very different from disabling  interrupts. Disabling interrupts then performing a read on a memory  word followed by a write does not prevent a second processor on the bus from accessing the word between the read and the write. In fact, disabling interrupts on processor 1 has no effect at all on processor 2. The only way to keep processor 2 out of the memory until processor 1 is finished is to lock the bus, which  requires  a  special hardware facility (basically, a bus line asserting that the bus is locked and not available to processors other than the one that locked it). To  use  the TSL instruction,  we  will  use a shared variable, *lock* , to coordinate access to shared memory. When *lock* is 0, any process may set it to 1 using the TSL instruction and then read or write the shared memory. When it is done, the process sets *lock* back to 0 using an ordinary move instruction.
 
+[also see](http://www.cs.nott.ac.uk/~pszgxk/courses/g53ops/Processes/proc08-tsl.html)
+
 *page 126 MOS 4th Edition*
 
 ## Explain Sleep & Wakeup.
