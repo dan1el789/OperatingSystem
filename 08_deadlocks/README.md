@@ -13,7 +13,7 @@ For many applications, a process needs exclusive access to not one resource, but
 
 
 ## 1.3 How many resources and processes are required that a deadlock can occur?
-
+1 reresource and 2 processes. 
 
 ## 1.4 Explain Dining Philosophers Problem.
 
