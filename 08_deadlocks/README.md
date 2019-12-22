@@ -16,6 +16,7 @@ It depends on the point of view. When I look from the view of a programmer on th
 2 reresource and 2 processes. 
 
 ## 1.4 Explain Dining Philosophers Problem.
+***read page 167-170 in MOS 4th Edition***
 
 ## 1.5 Why are there 5 Philosophers?
 
