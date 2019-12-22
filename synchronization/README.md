@@ -12,7 +12,7 @@ That part of the program where the shared memory is accessed is called the **cri
 ## Explain Lost-Update Problem.
 In computer science, in the field of databases, write–write conflict, also known as overwriting uncommitted data is a computational anomaly associated with interleaved execution of transactions. 
 
-*page 121 - MOS 4th Edition *
+*page 121 - MOS 4th Edition*
 
 ## How can you protect a critical section?
 
