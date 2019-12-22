@@ -6,7 +6,9 @@ A race condition is a behavior which occurs in software applications or electron
 *page 119 - MOS 4th Edition.* 
 
 ## Explain Critical Section.
+That part of the program where the shared memory is accessed is called the **critical region** or **critical section**. 
 
+*page 121 - MOS 4th Editio - MOS 4th Editionn* 
 ## Explain Lost-Update Problem
 
 ## How can you protect a critical section?
