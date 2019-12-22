@@ -8,8 +8,11 @@ A race condition is a behavior which occurs in software applications or electron
 ## Explain Critical Section.
 That part of the program where the shared memory is accessed is called the **critical region** or **critical section**. 
 
-*page 121 - MOS 4th Editio - MOS 4th Editionn* 
-## Explain Lost-Update Problem
+*page 121 - MOS 4th Edition* 
+## Explain Lost-Update Problem.
+In computer science, in the field of databases, write–write conflict, also known as overwriting uncommitted data is a computational anomaly associated with interleaved execution of transactions. 
+
+*page 121 - MOS 4th Edition *
 
 ## How can you protect a critical section?
 
