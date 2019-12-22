@@ -1,6 +1,7 @@
 # 1 Deadlocks
 
 ## 1.1 Define Deadlock.
+For many applications, a process needs exclusive access to not one resource, but several. Suppose, for example, two processes each want to record a scanned document on a Blu-ray disc. Process *A* requests permission to use the scanner and is granted it. Process *B* is programmed differently and requests the Blu-ray recorder first and is also granted it. Now *A* asks for the Blu-ray recorder, but the request is suspended until *B* releases it.  Unfortunately, instead of releasing the Blu-ray recorder, *B* asks for the scanner.  At this point both processes are blocked and will remain so forever.  This situation is called a **deadlock**.
 
 ## 1.2 Does a deadlock always occur after a Race-Condition?
 
