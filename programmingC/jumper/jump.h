@@ -1,1 +1,0 @@
-int jump(int[], int);

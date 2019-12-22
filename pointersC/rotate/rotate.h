@@ -1,1 +1,0 @@
-void rotateLeft(char*);
