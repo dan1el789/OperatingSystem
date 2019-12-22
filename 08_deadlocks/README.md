@@ -11,13 +11,21 @@ For many applications, a process needs exclusive access to not one resource, but
 *page 439 MOS 4th Edition*
 ## 1.2 Does a deadlock always occur after a Race-Condition?
 
+
 ## 1.3 How many resources and processes are required that a deadlock can occur?
+
 
 ## 1.4 Explain Dining Philosophers Problem.
 
 ## 1.5 Why are there 5 Philosophers?
 
 ## 1.6 List four preconditions for deadlocks.
+Coffman et al. (1971) showed that four conditions must hold for there to be a (resource) deadlock:
+1. Mutual exclusion condition.  Each resource is either currently assigned to exactly one process or is available.
+2. Hold-and-wait  condition.  Processes  currently  holding  resources  that were granted earlier can request new resources.
+3. No-preemption  condition.   Resources  previously  granted  cannot  beforcibly taken away from a process.  They must be explicitly releasedby the process holding them.
+4. Circular wait condition.  There must be a circular list of two or more processes, each of which is waiting  for a resource held by the next member of the chain. 
+All four of these conditions must be present for a resource deadlock to occur.  If one of them is absent, no resource deadlock is possible. It is worth noting that each condition relates to a policy that a system can have or not have. Can a given resource be assigned to more than one process at once? Can a process hold a resource and ask for another?  Can resources be preempted? Can  circular  waits  exist? Later on we will see how deadlocks can be attacked by trying to negate some of these conditions.
 
 ## 1.7 Explain Ostrich Algorithm.
 
