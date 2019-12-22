@@ -5,8 +5,8 @@ For many applications, a process needs exclusive access to not one resource, but
 
 *page 435 MOS 4th Edition*
 
-### **Deadlock can be defined formally as follows:** 
-A  set  of  processes  is  deadlocked  if  each  process  in  the  set  is  waiting  for  anevent that only another process in the set can cause.
+### Deadlock can be defined formally as follows:
+**A  set  of  processes  is  deadlocked  if  each  process  in  the  set  is  waiting  for  anevent that only another process in the set can cause.**
 
 *page 439 MOS 4th Edition*
 ## 1.2 Does a deadlock always occur after a Race-Condition?
