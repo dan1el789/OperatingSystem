@@ -41,6 +41,8 @@ Continuously testing a variable until some value appears is called **busy waitin
 *page 124 - MOS 4th Edition*
 
 ## Explain the disadvantage of disabling interrupts.
+If you disable interrupts, the user can type on the keyboard as often as he/she wants and nothing will happen. 
+
 
 ## Explain the disadvantage of strict alternation.
 
