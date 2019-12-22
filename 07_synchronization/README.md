@@ -63,5 +63,5 @@ TSL RX,LOCK
 ## Explain Sleep & Wakeup.
 Now let us look at some interprocess communication primitives that block instead of wasting CPU time when they are not allowed to enter their critical regions. One  of  the  simplest  is  the  pair **sleep** and **wakeup**. Sleep is  a  system  call  that causes the caller to block, that is, be suspended until another process wakes it up. The wakeup call  has  one  parameter,  the  process  to  be  awakened.  Alternatively, both sleep and wakeup each have one parameter, a memory address used to match up sleeps with wakeups.
 
-*page 127-130* **important to read** *sleep and wakeup*
+*page 127-130 MOS 4th Edition* **important to read** *sleep and wakeup*
 
