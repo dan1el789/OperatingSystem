@@ -29,5 +29,11 @@ Coffman et al. (1971) showed that four conditions must hold for there to be a (r
 All four of these conditions must be present for a resource deadlock to occur.  If one of them is absent, no resource deadlock is possible. It is worth noting that each condition relates to a policy that a system can have or not have. Can a given resource be assigned to more than one process at once? Can a process hold a resource and ask for another?  Can resources be preempted? Can  circular  waits  exist? Later on we will see how deadlocks can be attacked by trying to negate some of these conditions.
 
 ## 1.7 Explain Ostrich Algorithm.
+The simplest approach is the ostrich algorithm: stick your head in the sand and pretend there is no problem. * People react to this strategy in different ways.  Mathematicians find it unacceptable and say that deadlocks must be prevented at allcosts. Engineers ask how often the problem is expected, how often the system crashes for other reasons, and how serious a deadlock is. If deadlocks occur on the average once every five years, but system crashes due to hardware failures and operating system bugs  occur once a week, most engineers would not be willing topay a large penalty in performance or convenience to eliminate deadlocks. To make this contrast more specific, consider an operating system that blocks the caller when an open system call on a physical device such as a Blu-ray driver or a printer cannot be carried out because the device is busy. Typically it is up  to the device driver to decide what action to take under such circumstances.  Blocking or returning an error code are two obvious possibilities. If one process successfully opens the Blu-ray drive and another successfully opens the printer and then each process tries to open the other one and blocks trying, we have a dead-lock. Few current systems will detect this.
+
+* Actually, this bit of folklore is nonsense. Ostriches can run at 60 km/hour and their kick is powerfulenough to kill any lion with visions of a big chicken dinner, and lions know this.
+
+*page 443 mos 4th Edition*
+
 
 ## 1.8 Explain Two-Phase Locking.
