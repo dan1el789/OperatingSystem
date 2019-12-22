@@ -51,6 +51,14 @@ However, this  strategy  is  not  applicable  in  general.  In  real-time  syste
 
 *page 459 MOS 4th Edition*
 
+# Process Progress Diagrams
+
+## What is a process progress diagram and what is it used for?
+[have a look at this](https://elearning.fhws.de/pluginfile.php/1086970/mod_resource/content/0/11_Deadlocks.pdf#Outline0.2)
+A process progress diagram can be used to detect deadlocks. 
+
+## Create the following process progress diagram: Process 1: Acquire R2, Acquire R1, Release R1, Release R2. Process 2: Acquire R1, Acquire R2, Release R1, Release R2. Can a deadlock occur?
+
 # Petri-Nets
 
 ## Explain Petri Nets.
