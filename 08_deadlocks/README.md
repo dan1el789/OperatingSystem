@@ -13,7 +13,7 @@ For many applications, a process needs exclusive access to not one resource, but
 It depends on the point of view. When I look from the view of a programmer on that topic, I can say yes - because there was a resource which two processes want to manipulate and overriding each other. If I just want to know the [preconditions for a deadlock](https://github.com/ich-bin-du/OperatingSystem/tree/master/08_deadlocks#deadlock-can-be-defined-formally-as-follows) the answer is no. 
 
 ## 1.3 How many resources and processes are required that a deadlock can occur?
-1 reresource and 2 processes. 
+2 reresource and 2 processes. 
 
 ## 1.4 Explain Dining Philosophers Problem.
 
