@@ -1,0 +1,1 @@
+void interpretBrainfuck(char* ptr);
