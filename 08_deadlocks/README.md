@@ -57,6 +57,8 @@ However, this  strategy  is  not  applicable  in  general.  In  real-time  syste
 [have a look at this](https://elearning.fhws.de/pluginfile.php/1086970/mod_resource/content/0/11_Deadlocks.pdf#Outline0.2)
 A process progress diagram can be used to detect deadlocks. 
 
+If areas which can't be reached are before the deadlock area, there will be no deadlock. If the deadlock area can be accessed by the processes, there is a risk of a deadlock.
+
 ## Create the following process progress diagram: Process 1: Acquire R2, Acquire R1, Release R1, Release R2. Process 2: Acquire R1, Acquire R2, Release R1, Release R2. Can a deadlock occur?
 [have a look at this on page 21](https://elearning.fhws.de/pluginfile.php/1086970/mod_resource/content/0/11_Deadlocks.pdf#Outline0.2)
 
