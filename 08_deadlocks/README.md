@@ -33,7 +33,16 @@ The simplest approach is the ostrich algorithm: stick your head in the sand and 
 
 ¹ Actually, this bit of folklore is nonsense. Ostriches can run at 60 km/hour and their kick is powerfulenough to kill any lion with visions of a big chicken dinner, and lions know this.
 
-*page 443 mos 4th Edition*
-
+*page 443 MOS 4th Edition*
 
 ## 1.8 Explain Two-Phase Locking.
+
+Although both avoidance and prevention are not terribly promising in the general case, for specific applications, many excellent special-purpose algorithms are known. As an example, in many database systems, an operation that occurs frequently is requesting locks on several records and then updating all the locked records. When multiple processes are running at the same time, there is a real danger of deadlock.
+
+ The  approach  often  used  is  called **two-phase  locking**.  In the  first  phase,  theprocess tries to lock all the records it needs, one at a time.  If it succeeds, it begins the second phase, performing its updates and releasing the locks.  No real work is done in the first phase. 
+
+If during the first phase, some record is needed that is already locked, the process  just  releases  all  its  locks  and  starts  the  first  phase  all  over.   In a certain  sense, this  approach  is  similar  to  requesting  all  the  resources  needed  in  advance,  or  at least before anything irreversible is done.  In some versions of two-phase locking, there  is  no  release  and  restart  if  a  locked  record  is  encountered  during  the  first phase.  In these versions, deadlock can occur.
+
+However, this  strategy  is  not  applicable  in  general.  In  real-time  systems  and process control systems, for example, it is not acceptable to just terminate a proc-ess  partway  through  because  a  resource  is  not  available  and  start  all  over  again. Neither is it acceptable to start over if the process has read or written messages to the network, updated files, or anything else that cannot be safely repeated.  The algorithm  works  only  in  those  situations  where  the  programmer  has  very  carefully arranged  things  so  that  the  program  can  be  stopped  at  any  point  during  the  firstphase and restarted.  Many applications cannot be structured this way.
+
+*page 459 MOS 4th Edition*
