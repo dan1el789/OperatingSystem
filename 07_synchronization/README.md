@@ -33,6 +33,7 @@ Problem 2: Semaphores involve a queue in its implementation. For a FIFO queue, t
 
 
 ## Using one semaphore for multiple critical sections can lead to problems. Describe them.
+You get blocked by the semaphore if one critical section is executed which may would have no influence on the job you want to execute.
 
 ## Explain busy waiting.
 
