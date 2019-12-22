@@ -25,7 +25,7 @@ Although this requirement avoids race conditions, it is not sufficient for havin
 *page 121 - MOS 4th Edition*
 
 ## What are the disadvantages of a semaphore?
-Problem 1: Programming using Semaphores makes life harder as utmost care must be taken to ensure Ps and Vs are inserted correspondingly and in the correct order so that mutual exclusion and deadlocks are prevented. In addition, it is difficult to produce a structured layout for a program as the Ps and Vs are scattered all over the place. So the modularity is lost. Semaphores are quite impractical when it comes to large scale use.
+Problem 1: Programming using Semaphores makes life harder as utmost care must be taken to ensure Up and Down are inserted correspondingly and in the correct order so that mutual exclusion and deadlocks are prevented. In addition, it is difficult to produce a structured layout for a program as the Ps and Vs are scattered all over the place. So the modularity is lost. Semaphores are quite impractical when it comes to large scale use.
 
 Problem 2: Semaphores involve a queue in its implementation. For a FIFO queue, there is a high probability for a priority inversion to take place wherein a high priority process which came a bit later might just have to wait when a low priority one is in the critical section. For example, consider a case when a new smoker joins and is desperate to smoke. What if the agent who handles the distribution of the ingredients follows a FIFO queue (wherein the desperate smoker is last according to FIFO) and chooses the ingredients apt for another smoker who would rather wait some more time for a next puff?
 
@@ -36,6 +36,9 @@ Problem 2: Semaphores involve a queue in its implementation. For a FIFO queue, t
 You get blocked by the semaphore if one critical section is executed which may would have no influence on the job you want to execute.
 
 ## Explain busy waiting.
+Continuously testing a variable until some value appears is called **busy waiting**. A lock that uses busy waiting is called a **spin lock**. 
+
+*page 124 - MOS 4th Edition*
 
 ## Explain the disadvantage of disabling interrupts.
 
