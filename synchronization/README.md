@@ -1,6 +1,8 @@
 # Synchronization
 
 ## Explain Race Condition. When can they occur?
+A race condition is a behavior which occurs in software applications or electronic systems, such as logic systems, where the output is dependent on the timing or sequence of other uncontrollable events. Race conditions also occur in software which supports multithreading, use a distributed environment or are interdependent on shared resources. Race conditions often lead to bugs, as these events happen in a manner that the system or programmer never intended for. It can often result in a device crash, error notification or shutdown of the application. 
+page 119 - MOS 4th Edition. 
 
 ## Explain Critical Section.
 
